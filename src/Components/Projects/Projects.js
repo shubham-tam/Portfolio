@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Nav";
+
 import ProjectsGrid from "./ProjectsGrid";
 
 export default function Projects() {
@@ -11,7 +12,7 @@ export default function Projects() {
           textAlign: "center",
         }}
       >
-        Projects
+        My Projects
       </h2>
       <ProjectsGrid />
     </div>

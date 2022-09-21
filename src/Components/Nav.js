@@ -4,22 +4,24 @@ import "../App.css";
 import logo from "../images and videos/logo.png";
 import menu from "../images and videos/icons8-menu-50.png";
 import styled from "styled-components";
+import GLobalStyle from "./Style/GlobalStyle";
 
 const NavLinkk = styled(NavLink)`
   text-decoration: none;
-
   &:hover {
     border-bottom: 1px solid white;
   }
 
   &.${(props) => props.activeClassName} {
-    border-bottom: 1px solid white;
+    // border-bottom: 1px solid white;
+    border-bottom: 1px solid #f96f5d;
   }
 `;
 
 function Nav() {
   return (
     <div>
+      <GLobalStyle />
       <div>
         <NavLinkk to="/">
           {" "}
@@ -35,8 +37,15 @@ function Nav() {
             {" "}
             About Me{" "}
           </NavLinkk>
+          <NavLinkk activeClassName="active" to="/GetInTouch">
+            {" "}
+            Get In Touch{" "}
+          </NavLinkk>
+          <NavLinkk activeClassName="active" to="/Resume">
+            {" "}
+            Resume{" "}
+          </NavLinkk>
 
-          <li> Get In Touch </li>
           <li>
             {" "}
             <img src={menu} alt="" className="menu" />{" "}
