@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Components/Home";
-import Projects from "./Components/Projects/Projects";
+import Projects from "./Components/Projects Page/Projects";
 import AboutMe from "./Components/AboutMe";
 import GetInTouch from "./Components/GetInTouch";
 import Resume from "./Components/Resume";

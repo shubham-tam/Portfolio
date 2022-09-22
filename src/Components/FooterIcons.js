@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -24,47 +25,51 @@ const Row = styled.footer`
 `;
 
 const Title = styled.a`
+  color: white;
   &:hover {
-    // background-color: red;
-    transform: scale(0.7);
+    color: #f96f5d;
+    transform: scale(1.4);
+    transition: all 0.2ss ease;
   }
 `;
 
 export default function FooterIcons() {
   return (
-    <div>
-      <Box>
-        <Row>
-          <Title
-            href="mailto:tamrakarshubham23@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </Title>
-          <Title
-            href="https://www.instagram.com/shubhh.t/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </Title>
-          <Title
-            href="https://www.linkedin.com/in/shubham-tamrakar-790b03228/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </Title>
-          <Title
-            href="https://github.com/shubham-tam"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </Title>
-        </Row>
-      </Box>
-    </div>
+    <>
+      <div>
+        <Box>
+          <Row>
+            <Title
+              href="mailto:tamrakarshubham23@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            </Title>
+            <Title
+              href="https://www.instagram.com/shubhh.t/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </Title>
+            <Title
+              href="https://www.linkedin.com/in/shubham-tamrakar-790b03228/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </Title>
+            <Title
+              href="https://github.com/shubham-tam"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </Title>
+          </Row>
+        </Box>
+      </div>
+    </>
   );
 }

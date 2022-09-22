@@ -4,13 +4,14 @@ import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
 import GLobalStyle from "./Style/GlobalStyle";
 import { MessageAndTime } from "../MessageAndTime";
-import ProjectsGrid from "./Projects/ProjectsGrid";
+import ProjectsGrid from "./Projects Page/ProjectsGrid";
 import right from "../images and videos/right.png";
 import ServicesProvided from "./ServicesProvided";
 import FooterIcons from "./FooterIcons";
 
 const NavLinkk = styled(NavLink)`
   text-decoration: none;
+  color: white;
   &:hover {
     color: #f96f5d;
   }
@@ -63,7 +64,6 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           letterSpacing: "3px",
-          // alignitems: "center",
         }}
       >
         Services Provided

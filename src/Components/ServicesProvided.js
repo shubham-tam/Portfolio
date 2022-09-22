@@ -5,7 +5,6 @@ import css from "../images and videos/css.png";
 import js from "../images and videos/js.png";
 import react from "../images and videos/react.png";
 import ps from "../images and videos/ps.png";
-import GLobalStyle from "./Style/GlobalStyle";
 
 const Grid = styled.div`
   display: flex;

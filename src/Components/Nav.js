@@ -7,9 +7,12 @@ import styled from "styled-components";
 import GLobalStyle from "./Style/GlobalStyle";
 
 const NavLinkk = styled(NavLink)`
+  color: white;
   text-decoration: none;
   &:hover {
-    border-bottom: 1px solid white;
+    color: #f96f5d;
+    // border-bottom: 1px solid #f96f5d;
+    // border-bottom: 1px solid white;
   }
 
   &.${(props) => props.activeClassName} {
