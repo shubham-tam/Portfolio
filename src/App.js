@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects Page/Projects";
-import AboutMe from "./Components/AboutMe";
+// import AboutMe from "./Components/AboutMe";
 import GetInTouch from "./Components/GetInTouch";
 import Resume from "./Components/Resume";
 
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route>
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/AboutMe" element={<AboutMe />} />
+          {/* <Route path="/AboutMe" element={<AboutMe />} /> */}
           <Route path="/GetInTouch" element={<GetInTouch />} />
           <Route path="/GetInTouch" element={<GetInTouch />} />
           <Route path="/Resume" element={<Resume />} />

@@ -3,7 +3,6 @@ import Nav from "../Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import ProjectsGrid from "./ProjectsGrid";
 import WebProjects from "./Web/WebProjects";
 import UIUXGrid from "./UUX/UIUXGrid";
 import GraphicsGrid from "./Graphics/GraphicsGrid";
@@ -51,7 +50,7 @@ export default function Project() {
   return (
     <>
       <Nav />
-      {/* <h1
+      <h1
         style={{
           textAlign: "center",
         }}
@@ -66,8 +65,8 @@ export default function Project() {
           )}
         </Arrow>
       </h1>
-      {showProjects && <WebProjects />} */}
-      <h1
+      {showProjects && <WebProjects />}
+      {/* <h1
         style={{
           textAlign: "center",
         }}
@@ -75,7 +74,7 @@ export default function Project() {
         Web{" "}
       </h1>
 
-      <WebProjects />
+      <WebProjects /> */}
 
       {/*  */}
       {/*  */}

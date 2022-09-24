@@ -18,6 +18,14 @@ const Grid = styled.div`
   justify-content: center;
   margin-top: 50px;
   gap: 30px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
 `;
 
 const Item = styled.div`
@@ -29,16 +37,32 @@ const Item = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0);
+  }
 `;
 
 const Gif = styled.img`
   width: 180px;
   height: 180px;
+
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `;
 
 const Neb = styled.img`
   width: 180px;
   height: 120px;
+
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 60px;
+  }
 `;
 
 const Links = styled.a`
@@ -57,6 +81,11 @@ const Links = styled.a`
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  cursor: pointer;
+
   &:before {
     content: "";
     background: #54b3d6;
@@ -70,19 +99,30 @@ const Links = styled.a`
   }
 
   &:hover {
+    top: -10px;
     background-position: 0;
+  }
+
+  @media (max-width: 768px) {
+    display: inline-block;
   }
 `;
 
 const OuterBox = styled.div`
   width: 220px;
   height: 220px;
-  // border-radius: 20px;
-  // background-color: rgba(171, 178, 185, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    display:flex,
+    justify-content: center,
+    align-items: center,
+  }
 `;
 
 const ShowMore = styled.div`
@@ -109,6 +149,19 @@ const ShowMore = styled.div`
     top: 0px;
     left: 0px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    font-weight: 200;
+    display:flex,
+    justify-content: center,
+    align-items: center,
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+  }
 `;
 
 export default function ProjectsGrid() {
@@ -133,7 +186,7 @@ export default function ProjectsGrid() {
               style={{ width: "200px", height: "110px" }}
             />
           </Item>
-          <Links href="https://shubham2048.netlify.app/" target="._blank">
+          <Links href="https://dailyroutine4me.netlify.app/" target="._blank">
             {" "}
             Daily Routine Tracker
           </Links>{" "}

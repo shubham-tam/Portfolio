@@ -11,6 +11,13 @@ const Grid = styled.div`
   justify-content: center;
   margin-top: 50px;
   gap: 30px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 5px;
+  }
 `;
 
 const Item = styled.div`
@@ -22,17 +29,40 @@ const Item = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    top: -20px;
+  }
 `;
 
 const Image = styled.img`
   width: 135px;
   height: 135px;
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export default function ServicesProvided() {
   return (
     <div>
-      {/* <GLobalStyle /> */}
       <Grid>
         <Item>
           <Image src={html} alt="" />

@@ -9,12 +9,11 @@ export default function Resume() {
     <div>
       <GLobalStyle />
       <Nav />
-      <Document file={STResume}>
+      {/* <Document file={STResume}>
         {" "}
         <Page pageNumber={1} />
         <Page pageNumber={2} />
-        {/* <AllPagesPDFViewer pdf={STResume} /> */}
-      </Document>
+      </Document> */}
     </div>
   );
 }

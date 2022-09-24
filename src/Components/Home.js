@@ -8,6 +8,7 @@ import ProjectsGrid from "./Projects Page/ProjectsGrid";
 import right from "../images and videos/right.png";
 import ServicesProvided from "./ServicesProvided";
 import FooterIcons from "./FooterIcons";
+import GetInTouch from "./GetInTouch";
 
 const NavLinkk = styled(NavLink)`
   text-decoration: none;
@@ -26,6 +27,11 @@ export default function Home() {
     <div>
       <GLobalStyle />
       <Nav />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <MessageAndTime />
       <p
         style={{
@@ -37,7 +43,7 @@ export default function Home() {
         }}
       >
         {" "}
-        <a style={{ color: "#f96f5d" }}> Hello</a>, 👋 I'm Shubham. I'm an
+        <alt style={{ color: "#f96f5d" }}> Hello</alt>, 👋 I'm Shubham. I'm an
         aspiring Web Developer
         <br />
         and a Tech Enthusiast. <br />
@@ -88,7 +94,12 @@ export default function Home() {
       <br />
       <br />
       <br />
+      <GetInTouch />
       <FooterIcons />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
