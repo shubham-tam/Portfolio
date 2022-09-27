@@ -36,7 +36,7 @@ export const Information = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 20px;
+    gap: 5px;
     flex-direction: column;
   }
 `;
@@ -53,6 +53,7 @@ export const Item = styled.div`
   gap: 5%;
 
   @media (max-width: 768px) {
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
     height: 50px;
     font-size: 12px;
@@ -77,6 +78,7 @@ export const Tel = styled.a`
   }
 
   @media (max-width: 768px) {
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
     height: 50px;
     font-size: 12px;
@@ -101,6 +103,7 @@ export const Mail = styled.a`
   }
 
   @media (max-width: 768px) {
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
     height: 50px;
     font-size: 9.5px;

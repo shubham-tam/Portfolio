@@ -42,6 +42,10 @@ const Arrow = styled.button`
     }
 `;
 
+const Container = styled.div`
+  margin-top: 5%;
+`;
+
 export default function Project() {
   const [showProjects, toggleShow] = useState(false);
   const [showUIX, toggleshowUIX] = useState(false);
@@ -50,23 +54,24 @@ export default function Project() {
   return (
     <>
       <Nav />
-      <h1
-        style={{
-          textAlign: "center",
-        }}
-      >
-        Web{" "}
-        <Arrow onClick={() => toggleShow(!showProjects)}>
-          {" "}
-          {showProjects ? (
-            <FontAwesomeIcon icon={faAngleUp} size="3x" />
-          ) : (
-            <FontAwesomeIcon icon={faAngleDown} size="3x" />
-          )}
-        </Arrow>
-      </h1>
-      {showProjects && <WebProjects />}
-      {/* <h1
+      <Container>
+        <h1
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Web{" "}
+          <Arrow onClick={() => toggleShow(!showProjects)}>
+            {" "}
+            {showProjects ? (
+              <FontAwesomeIcon icon={faAngleUp} size="3x" />
+            ) : (
+              <FontAwesomeIcon icon={faAngleDown} size="3x" />
+            )}
+          </Arrow>
+        </h1>
+        {showProjects && <WebProjects />}
+        {/* <h1
         style={{
           textAlign: "center",
         }}
@@ -76,49 +81,50 @@ export default function Project() {
 
       <WebProjects /> */}
 
-      {/*  */}
-      {/*  */}
-      {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
 
-      <h1
-        style={{
-          textAlign: "center",
-        }}
-      >
-        UI/UX Projects{" "}
-        <Arrow onClick={() => toggleshowUIX(!showUIX)}>
-          {" "}
-          {showUIX ? (
-            <FontAwesomeIcon icon={faAngleUp} size="3x" />
-          ) : (
-            <FontAwesomeIcon icon={faAngleDown} size="3x" />
-          )}
-        </Arrow>
-      </h1>
-      {showUIX && <UIUXGrid />}
+        <h1
+          style={{
+            textAlign: "center",
+          }}
+        >
+          UI/UX Projects{" "}
+          <Arrow onClick={() => toggleshowUIX(!showUIX)}>
+            {" "}
+            {showUIX ? (
+              <FontAwesomeIcon icon={faAngleUp} size="3x" />
+            ) : (
+              <FontAwesomeIcon icon={faAngleDown} size="3x" />
+            )}
+          </Arrow>
+        </h1>
+        {showUIX && <UIUXGrid />}
 
-      {/*  */}
-      {/*  */}
-      {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
 
-      <h1
-        style={{
-          textAlign: "center",
-        }}
-      >
-        Graphics (Posters, Ads){" "}
-        <Arrow onClick={() => toggleshowGraphics(!showGraphics)}>
-          {" "}
-          {showGraphics ? (
-            <FontAwesomeIcon icon={faAngleUp} size="3x" />
-          ) : (
-            <FontAwesomeIcon icon={faAngleDown} size="3x" />
-          )}
-        </Arrow>
-      </h1>
-      {showGraphics && <GraphicsGrid />}
-      <br />
-      <br />
+        <h1
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Graphics (Posters, Ads){" "}
+          <Arrow onClick={() => toggleshowGraphics(!showGraphics)}>
+            {" "}
+            {showGraphics ? (
+              <FontAwesomeIcon icon={faAngleUp} size="3x" />
+            ) : (
+              <FontAwesomeIcon icon={faAngleDown} size="3x" />
+            )}
+          </Arrow>
+        </h1>
+        {showGraphics && <GraphicsGrid />}
+        <br />
+        <br />
+      </Container>
     </>
   );
 }
